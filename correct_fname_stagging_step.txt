@@ -1,0 +1,15 @@
+for i in *.xlsx; do new_name=$(echo $i | sed -En 's/IDBRK2/IDBRMC/p'); mv $i $new_name; done
+
+for i in *.xlsx; do new_name=$(echo $i | sed -En 's/MTARP1/MTCASX/p'); mv $i $new_name; done
+
+for i in *.xlsx; do new_name=$(echo $i | sed -En 's/MTARP2/MTCAWX/p'); mv $i $new_name; done
+
+for i in *.xlsx; do new_name=$(echo $i | sed -En 's/MTARP3/MTCAWH/p'); mv $i $new_name; done
+
+for i in *.xlsx; do new_name=$(echo $i | sed -En 's/COFFJ1/COFEJ1/p'); mv $i $new_name; done
+
+for i in *.xlsx; do new_name=$(echo $i | sed -En 's/COFFJ2/COFEJ2/p'); mv $i $new_name; done
+
+for i in *.xlsx; do new_name=$(echo $i | sed -En 's/COFFB1/COFEB1/p'); mv $i $new_name; done
+
+for i in *.xlsx; do new_name=$(echo $i | sed -En 's/COFFB2/COFEB2/p'); mv $i $new_name; done
